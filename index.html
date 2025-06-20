@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Company</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>RIT ENERGY LIMITED </title>
+  <link rel="stylesheet" href="styles/style.css"/>
 </head>
 <body>
   <header>
-    <div class="logo">YourLogo</div>
+    <div class="logo">
+    <img src="image/ritenergy.png" alt="Company Logo" width="200" />
+    </div>
     <nav>
       <ul>
-        <li><a href="#">Who We Are</a></li>
-        <li><a href="#">What We Do</a></li>
-        <li><a href="#">Sustainability</a></li>
-        <li><a href="#">Newsroom</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="who-we-are.html">Who We Are</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="newsroom.html">Newsroom</a></li>
+        <li><a href="investor.html">Investors</a></li>
+        <li><a href="careers.html">Careers</a></li>
       </ul>
     </nav>
   </header>
@@ -42,8 +46,63 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Your Company. All rights reserved.</p>
-  </footer>
+  <nav>
+    <ul>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="newsroom.html">Newsroom</a></li>
+      <li><a href="investor.html">Investors</a></li>
+      <li><a href="contact-us.html">Contact us</a></li>
+      <li><a href="subscribe.html">Subscribe</a></li>
+      <li><a href="javascript:void(0)" onclick="openPrivacyModal()">Privacy Center</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="terms.html">Terms and conditions</a></li>
+      <li><a href="privacy.html">Privacy policy </a></li>
+    </ul>
+  </nav>
+  <p>&copy; 2025 Your Company. All rights reserved.</p>
+  <nav class="socialmedia">
+    <a href="https://facebook.com"><img src="image/facebook.webp" alt="Facebook" /></a>
+    <a href="https://twitter.com"><img src="image/twitter.webp" alt="Twitter" /></a>
+    <a href="https://instagram.com"><img src="image/instagram.webp" alt="Instagram" /></a>
+  </nav>
+   <div class="footer-links-right">
+    <a href="index.html">RIT-ENERGY</a>
+    <a href="ritstations.html">RITStations</a>
+    <a href="energy.html">eNeRgY</a>
+    <a href="fuels.html">FUELS</a>
+    <a href="Ene.html">RIT[E]WORLD</a>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div id="privacyModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closePrivacyModal()">&times;</span>
+    <h2>Privacy Center</h2>
+    <p>Your privacy statement or interactive content goes here...</p>
+  </div>
+</div>
+
+<!-- Inline JavaScript -->
+<script>
+  function openPrivacyModal() {
+    const modal = document.getElementById('privacyModal');
+    if (modal) modal.style.display = 'block';
+  }
+
+  function closePrivacyModal() {
+    const modal = document.getElementById('privacyModal');
+    if (modal) modal.style.display = 'none';
+  }
+
+  window.addEventListener('click', function(event) {
+    const modal = document.getElementById('privacyModal');
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+
 </body>
 </html>
 
