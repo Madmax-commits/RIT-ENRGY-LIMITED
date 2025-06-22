@@ -105,7 +105,7 @@ nav a:hover {
 
 /* FOOTER */
 footer {
-  background-color: #1C2A40;
+  background-color: #6a6a8a;
   color: off-white;
   padding: 2rem 4%;
   display: flex;
@@ -376,63 +376,60 @@ footer p {
   border-color: #005aa7;
 }
 .section-box {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  margin: 40px 0;
+  background-color: #f8f8f8;
+  border-radius: 8px;
 }
 
 .section-box img {
-  width: 100%;
+  width: 50%;
   height: auto;
-  display: block;
-  object-fit: cover;
+  border-radius: 4px;
 }
 
 .section-content {
-  padding: 3rem 2rem;
-  max-width: 900px;
-  margin: auto;
-  text-align: left;
+  width: 50%;
+  padding: 0 20px;
 }
 
-.section-content h2 {
-  font-size: 2rem;
-  color: #002868;
-  margin-bottom: 1rem;
+/* Flip the order for the reverse class */
+.section-box.reverse {
+  flex-direction: row-reverse;
 }
-
-.section-content p {
-  font-size: 1.05rem;
-  color: #333;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
 .link-arrow {
-  color: #005aa7;
-  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #003057;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
+  position: relative;
+  padding-right: 20px;
+  transition: all 0.3s ease;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.link-arrow::after {
+  content: "→";
+  margin-left: 8px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 0;
 }
 
 .link-arrow:hover {
-  border-color: #005aa7;
+  color: #0057b7;
 }
 
-/* Background feels for uniqueness */
-.org-section {
-  background-color: #f2f7ff;
+.link-arrow:hover::after {
+  transform: translateX(4px);
 }
 
-.governance-section {
-  background-color: #f5f9f2;
-}
-
-.brands-section {
-  background-color: #fffaf2;
-}
 
 
 .explore-more {
