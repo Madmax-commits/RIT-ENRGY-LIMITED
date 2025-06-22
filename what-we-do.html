@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>What We Do | RIT ENERGY LIMITED</title>
   <link rel="stylesheet" href="styles/what-we-do.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <header>
     <div class="logo">
-       <img src="image/colored-logo (4).png" alt="Company Logo" width="200" />
+      <img src="image/colored-logo (4).png" alt="Company Logo" width="200" />
     </div>
-     <div class="top-icons">
+    <div class="top-icons">
       <span class="globe-icon"><i class="fas fa-globe"></i></span>
       <span class="global-text">Global</span>
       <span class="search-icon"><i class="fas fa-magnifying-glass"></i></span>
@@ -28,26 +28,93 @@
     </nav>
   </header>
 
-  <section class="banner">
-    <h1>What We Do</h1>
-    <p>Creating energy and sustainable solutions that improve lives globally.</p>
+   <section class="hero">
+    <div class="hero-content">
+      <h1 id="hero-heading">Powering Progress, Responsibly</h1>
+      <p id="hero-subtext">Explore innovative energy solutions for a better tomorrow.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
   </section>
 
-  <section class="content">
-    <h2>Energy Leadership</h2>
-    <p>For over a century, we’ve produced and delivered vital energy that fuels industries, economies, and progress.</p>
-
-    <h2>Integrated Solutions</h2>
-    <p>We harness expertise across operations, technology, and logistics to bring innovative products to market.</p>
-
-    <h2>Cleaner Tomorrow</h2>
-    <p>From carbon capture to low-emission fuels, we invest in technologies that reduce environmental impact and power sustainable growth.</p>
-
-    <h2>Value for Stakeholders</h2>
-    <p>We drive value through operational excellence, transparency, and long-term performance—for communities, investors, and the planet.</p>
+  <!-- Visual Sections -->
+  <section class="section-box">
+    <img src="image/hero1.jpg" alt="What We Do" />
+    <div class="section-content">
+      <h2>What We Do</h2>
+      <p>For over 140 years, we’ve provided energy that drives progress. Our teams combine operational excellence with innovation to meet global energy demand and support the transition to lower-emission solutions.</p>
+    </div>
   </section>
 
- <!-- Footer -->
+  <section class="section-box reverse">
+    <img src="image/hero2.jpg" alt="Industrial Solutions" />
+    <div class="section-content">
+      <h2>Delivering Industrial Solutions</h2>
+      <p>Powering industries and infrastructure with essential chemicals and large-scale carbon capture solutions for a lower-carbon future.</p>
+      <a href="solutions.html" class="link-arrow">Explore our solutions</a>
+    </div>
+  </section>
+
+  <section class="section-box">
+    <img src="image/hero3.jpg" alt="Transforming Transportation" />
+    <div class="section-content">
+      <h2>Transforming Transportation</h2>
+      <p>We’re enabling energy-efficient mobility with innovations in advanced fuels and emissions-reducing technologies.</p>
+      <a href="transportation.html" class="link-arrow">Explore our solutions</a>
+    </div>
+  </section>
+
+  <section class="section-box reverse">
+    <img src="image/hero4.jpg" alt="Materials for Modern Living" />
+    <div class="section-content">
+      <h2>Materials for Modern Living</h2>
+      <p>High-performance materials that make everyday life possible—from EVs and smartphones to packaging, aviation, and medicine.</p>
+      <a href="materials.html" class="link-arrow">Learn more</a>
+    </div>
+  </section>
+
+  <section class="section-box">
+    <img src="image/hero5.jpg" alt="Energy Supply" />
+    <div class="section-content">
+      <h2>Energy Supply</h2>
+      <p>Even amid global challenges, we continue to invest in secure, reliable energy to help lift living standards and power global development.</p>
+      <a href="energy.html" class="link-arrow">Learn more</a>
+    </div>
+  </section>
+  <section class="deeper-dive">
+  <div class="container">
+    <h2>A Deeper Dive</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="image/hero6.jpg" alt="Lower-Emission Fuels" />
+        <div class="card-content">
+          <h3>Lower-Emission Fuels</h3>
+          <p>Explore our investments in lower-emission fuel options and how we're transforming transportation for a cleaner future.</p>
+          <a href="lower-emission.html" class="link-arrow">Learn more</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hero1.jpg" alt="Carbon Capture" />
+        <div class="card-content">
+          <h3>Carbon Capture</h3>
+          <p>Discover our advancements in carbon capture and storage technologies aimed at reducing industrial emissions at scale.</p>
+          <a href="carbon-capture.html" class="link-arrow">Learn more</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/hero8.jpg" alt="Our People, Our Purpose" />
+        <div class="card-content">
+          <h3>Our People, Our Purpose</h3>
+          <p>Meet the innovators and engineers driving our energy transition strategies and shaping the future of responsible energy.</p>
+          <a href="our-people.html" class="link-arrow">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
   <footer>
     <nav>
       <ul>
@@ -84,3 +151,57 @@
   </div>
 </body>
 </html>
+<script>
+  const heroImages = [
+    'image/hero9.jpg',
+    'image/hero8.jpg',
+    'image/hero7.jpg',
+    'image/hero6.jpg',
+    'image/hero5.jpg',
+    'image/hero4.jpg',
+    'image/hero1.jpg',
+    'image/hero2.jpg',
+    'image/hero3.jpg'
+  ];
+
+  const heroHeadings = [
+    'Powering Progress, Responsibly',
+    'Innovating for a Sustainable Tomorrow',
+    'Energy Solutions That Matter',
+    'Fueling Growth with Clean Technology',
+    'Partnering for a Greener Future',
+    'Engineering Tomorrow’s Energy Today',
+    'Trusted Energy for Every Community',
+    'Delivering Impact Beyond Energy',
+    'Where Innovation Meets Responsibility'
+  ];
+
+  const heroSubtexts = [
+    'Explore innovative energy solutions for a better tomorrow.',
+    'Driving change through low-carbon technologies.',
+    'Serving communities with integrity and progress.',
+    'Transforming ideas into solutions for a cleaner planet.',
+    'Collaborating for a more resilient energy future.',
+    'Harnessing data, science, and sustainability together.',
+    'Empowering people, protecting the planet, fueling progress.',
+    'Energy leadership rooted in transparency and care.',
+    'Meeting global needs with local understanding.'
+  ];
+
+  let index = 0;
+  const heroSection = document.querySelector('.hero');
+  const heading = document.getElementById('hero-heading');
+  const subtext = document.getElementById('hero-subtext');
+
+  function updateHero() {
+    heroSection.style.backgroundImage = `url('${heroImages[index]}')`;
+    heading.textContent = heroHeadings[index];
+    subtext.textContent = heroSubtexts[index];
+    index = (index + 1) % heroImages.length;
+  }
+
+  setInterval(updateHero, 5000);
+  updateHero();
+</script>
+
+
