@@ -38,6 +38,29 @@ nav a {
   font-weight: 500;
 }
 
+/* TOP RIGHT ICONS */
+.top-icons {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  z-index: 999;
+}
+
+.globe-icon i,
+.search-icon i {
+  color: navy;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.global-text {
+  color: navy;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
 .banner {
   background: linear-gradient(#0a1e39dd, #0a1e39dd), url('your-banner-image.jpg') center/cover no-repeat;
   color: white;
