@@ -59,6 +59,30 @@ nav a {
   color: navy;
   font-weight: 500;
 }
+.subnav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  background-color: #f2f6fa;
+  padding: 1rem 0;
+  border-top: 1px solid #d9e3ec;
+  border-bottom: 1px solid #d9e3ec;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.subnav a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.subnav a:hover {
+  color: #005ea5;
+  text-decoration: underline;
+}
+
 
 .vision-summary-wrapper {
   display: flex;
