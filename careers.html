@@ -1,15 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Careers | Your Company</title>
+  <title>Newsroom| RIT ENERGY LIMITED</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles/careers.css">
 </head>
 <body>
+   <!-- Top Icons -->
+  <div class="top-icons">
+    <span class="globe-icon"><i class="fas fa-globe"></i></span>
+    <span class="global-text">Global</span>
+    <span class="search-icon"><i class="fas fa-magnifying-glass"></i></span>
+  </div>
   <header>
     <div class="logo">
-     <img src="image/org-logo.png" alt="Company Logo" width="200" />
+       <img src="image/colored-logo (4).png" alt="Company Logo" width="200" />
     </div>
     <nav>
       <ul>
@@ -17,12 +23,22 @@
         <li><a href="who-we-are.html">Who We Are</a></li>
         <li><a href="what-we-do.html">What We Do</a></li>
         <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="community.html">Community</a></li>
         <li><a href="newsroom.html">Newsroom</a></li>
-        <li><a href="investor.html">Investor</a></li>
+        <li><a href="investor.html">Investors</a></li>
         <li><a href="careers.html">Careers</a></li>
       </ul>
     </nav>
   </header>
+  <nav class="quick-nav">
+  <ul>
+    <li><a href="#latest-news">Latest news</a></li>
+    <li><a href="#">Share</a></li>
+    <li><a href="javascript:window.print()">Print</a></li>
+    <li><a href="#">Top</a></li>
+    <li><a href="#">Subscribe</a></li>
+  </ul>
+</nav>
 
   <section class="banner">
     <h1>Careers at Your Company</h1>
@@ -53,8 +69,40 @@
     <p><a href="#">Search open positions</a> to find your next opportunity with Your Company.</p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Your Company. All rights reserved.</p>
+    <nav>
+      <ul>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="newsroom.html">Newsroom</a></li>
+        <li><a href="investor.html">Investors</a></li>
+        <li><a href="contact-us.html">Contact us</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+        <a href="index.html">RIT-ENERGY</a>
+      </ul>
+    </nav>
+    <p>&copy; 2025 RIT ENERGY LIMITED. All rights reserved.</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com"><img src="image/facebook.webp" alt="Facebook" /></a>
+      <a href="https://twitter.com"><img src="image/twitter.webp" alt="Twitter" /></a>
+      <a href="https://instagram.com"><img src="image/instagram.webp" alt="Instagram" /></a>
+    </nav>
+    <div class="footer-links-right">
+      <li><a href="javascript:void(0)" onclick="openPrivacyModal()">Privacy Center</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="terms.html">Terms and conditions</a></li>
+      <li><a href="privacy.html">Privacy policy</a></li>
+      <a href="ritstations.html">RITStations</a>
+    </div>
   </footer>
+
+  <!-- Privacy Modal -->
+  <div id="privacyModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePrivacyModal()">&times;</span>
+      <h2>Privacy Center</h2>
+      <p>Your privacy statement or interactive content goes here...</p>
+    </div>
+  </div>
 </body>
 </html>
