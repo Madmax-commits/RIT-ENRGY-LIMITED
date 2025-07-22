@@ -21,18 +21,23 @@
       <span class="search-icon"><i class="fas fa-magnifying-glass"></i></span>
     </div>
 
-    <nav>
-      <ul>
-        <li><a href="who-we-are.html">Who We Are</a></li>
-        <li><a href="what-we-do.html">What We Do</a></li>
-        <li><a href="sustainability.html">Sustainability</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="newsroom.html">Newsroom</a></li>
-        <li><a href="investor.html">Investors</a></li>
-        <li><a href="careers.html">Careers</a></li>
-      </ul>
-    </nav>
-  </header>
+   <div class="hamburger" onclick="toggleMenu()">
+   <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+  <span class="close-btn" onclick="toggleMenu()">&times;</span>
+  <ul>
+    <li><a href="who-we-are.html">Who We Are</a></li>
+    <li><a href="what-we-do.html">What We Do</a></li>
+    <li><a href="sustainability.html">Sustainability</a></li>
+    <li><a href="community.html">Community</a></li>
+    <li><a href="newsroom.html">Newsroom</a></li>
+    <li><a href="investor.html">Investors</a></li>
+    <li><a href="careers.html">Careers</a></li>
+  </ul>
+ </div>
+</header>
 
   <!-- Hero -->
   <section class="hero">
@@ -169,6 +174,7 @@
       </ul>
     </nav>
     <p>&copy; 2025 RIT ENERGY LIMITED. All rights reserved.</p>
+    <p id="last-updated"></p>
     <nav class="socialmedia">
       <a href="https://facebook.com"><img src="Image/facebook.webp" alt="Facebook" /></a>
       <a href="https://twitter.com"><img src="Image/twitter.webp" alt="Twitter" /></a>
@@ -245,3 +251,5 @@
   setInterval(updateHero, 5000);
   updateHero();
 </script>
+<script src="scripts/rit.js"></script>
+
