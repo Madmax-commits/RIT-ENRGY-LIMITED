@@ -171,7 +171,7 @@
       </ul>
     </nav>
     <p>&copy; 2025 RIT ENERGY LIMITED. All rights reserved.</p>
-     <div id="lastUpdated"></div>
+     
     
     <nav class="socialmedia">
       <a href="https://facebook.com"><img src="Image/facebook.webp" alt="Facebook" /></a>
@@ -185,6 +185,9 @@
       <li><a href="privacy.html">Privacy policy</a></li>
       <a href="ritstations.html">RITStations</a>
     </div>
+    <nav id="last">
+    <div id="lastUpdated"></div>
+    </nav>
   </footer>
 
   <!-- Privacy Modal -->
@@ -276,4 +279,13 @@ closeMenu.addEventListener('click', () => {
 
     // Display it in the page
     document.getElementById('lastUpdated').textContent = `Last updated: ${formattedDate}`;
+
+     // Ensure footer is centered on all screen sizes
+  const footer = document.getElementById('footer');
+  footer.style.display = 'flex';
+  footer.style.justifyContent = 'center';
+  footer.style.alignItems = 'center';
+  footer.style.textAlign = 'center';
+  footer.style.width = '100%';
+
   </script>

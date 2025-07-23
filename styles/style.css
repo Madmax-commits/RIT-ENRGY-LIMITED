@@ -378,9 +378,23 @@ footer p {
     z-index: 1002; /* Ensures it stays above other elements */
   }
 }
- #lastUpdated {
-      font-size: 0.9em;
-      color: #555;
-      margin-top: 20px;
-      text-align: center;
-}
+#last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: navy;
+    box-sizing: border-box;
+    background-color: #f9f9f900; /* optional for contrast */
+  }
+
+  @media (max-width: 600px) {
+    #last {
+      padding: 15px;
+      font-size: 0.85em;
+    }
+  }
