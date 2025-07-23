@@ -378,3 +378,9 @@ footer p {
     z-index: 1002; /* Ensures it stays above other elements */
   }
 }
+ #lastUpdated {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 20px;
+      text-align: center;
+}
