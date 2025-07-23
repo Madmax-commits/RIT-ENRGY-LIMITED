@@ -155,6 +155,12 @@ h2 {
   padding-left: 3rem; /* adds space from the left edge */
 }
 
+@media screen and (max-width: 768px) {
+  .news-item {
+    padding: 1rem;
+  }
+}
+
 .news-item {
   position: relative;
   padding: 1rem 1rem 1rem 2.5rem; /* reduced right padding from 1.5rem to 1rem */
@@ -165,14 +171,12 @@ h2 {
 }
 
 .news-item img {
-  position: absolute;
-  top: 1rem;
-  right: 12rem;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 6px;
-}
+    position: static;
+    display: block;
+    margin: 1rem auto;
+    width: 100px;
+    height: 100px;
+  }
 
 .news-item h3 {
   font-size: 1.1rem;
@@ -189,15 +193,27 @@ h2 {
   font-size: 0.85rem;
 }
 
-hr {
-  border: none;
-  height: 1px;
-  background-color: #ccc;
-  margin: 2rem 0 2rem 0;
-  margin-left: 3rem;
-  width: calc(85rem - 100px); /* prevents overlap with the image */
- 
+ hr {
+    margin-left: 1rem;
+    width: 90%;
+  }
+
+.news-item,
+.content,
+.quick-nav,
+.background-container,
+.second-background-container,
+.info-columns,
+footer {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .news-links {
   text-align: center;
   margin-top: 3rem;
