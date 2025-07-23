@@ -315,6 +315,7 @@ footer p {
 }
 
 /* Hamburger and mobile menu default hidden in desktop */
+* Hamburger and mobile menu default hidden in desktop */
 .menu-toggle,
 .close-menu {
   display: none;
@@ -364,9 +365,8 @@ footer p {
   cursor: pointer;
   padding: 1rem;
   position: sticky;
-  top: 0.75px;
-  bottom: 0.5rem;
-  left: 420px;
+  top: 50px;
+  left: 400px;
   z-index: 1001;
   background-color: white;
 }
