@@ -144,3 +144,26 @@ window.addEventListener('resize', () => {
   }
 });
 </script>
+<script>
+    // Get today's date
+    const now = new Date();
+
+    // Format the date (e.g., July 23, 2025, 08:54 AM)
+    const options = {
+      year: 'numeric', month: 'long', day: 'numeric',
+      hour: '2-digit', minute: '2-digit', hour12: true
+    };
+    const formattedDate = now.toLocaleString('en-US', options);
+
+    // Display it in the page
+    document.getElementById('lastUpdated').textContent = `Last updated: ${formattedDate}`;
+
+     // Ensure footer is centered on all screen sizes
+  const footer = document.getElementById('footer');
+  footer.style.display = 'flex';
+  footer.style.justifyContent = 'center';
+  footer.style.alignItems = 'center';
+  footer.style.textAlign = 'center';
+  footer.style.width = '100%';
+
+  </script>
