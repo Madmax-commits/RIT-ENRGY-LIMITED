@@ -165,15 +165,16 @@ nav a {
 }
 
 /* Responsive stacking */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .vision-summary-wrapper {
-    flex-direction: column;
+    padding: 0 1rem;
   }
 
   .blue-summary-box {
-    flex: 1 1 100%;
+    padding: 1.5rem;
   }
 }
+
 
 .explore-more {
   padding: 4rem 2rem;
