@@ -45,8 +45,8 @@ nav a {
 
 /* TOP RIGHT ICONS */
 .top-icons {
-  position: absolute;
-  top: 0px;
+position: absolute;
+  top: 0.75rem;
   right: 1.5rem;
   display: flex;
   align-items: center;
