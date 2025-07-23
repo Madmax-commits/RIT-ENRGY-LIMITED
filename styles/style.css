@@ -19,7 +19,7 @@ header {
   align-items: center;
   background: white;
   color: white;
-  padding: 0rem 1rem;
+  padding: 1rem 2rem;
   position: relative;
   flex-wrap: wrap;
 }
@@ -364,7 +364,7 @@ footer p {
   color: navy;
   cursor: pointer;
   padding: 1rem;
-  position: fixed;
+  position: sticky;
   top: 50px;
   left: 400px;
   z-index: 1001;
