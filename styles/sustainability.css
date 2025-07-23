@@ -67,13 +67,13 @@ nav a {
 }
 .subnav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
   background-color: #f2f6fa;
-  padding: 1rem 0;
+  padding: 1rem;
   border-top: 1px solid #d9e3ec;
   border-bottom: 1px solid #d9e3ec;
-  font-family: "Segoe UI", sans-serif;
 }
 
 .subnav a {
