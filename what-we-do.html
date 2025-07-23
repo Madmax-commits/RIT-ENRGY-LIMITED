@@ -17,18 +17,19 @@
       <span class="global-text">Global</span>
       <span class="search-icon"><i class="fas fa-magnifying-glass"></i></span>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="who-we-are.html">Who We Are</a></li>
-        <li><a href="what-we-do.html">What We Do</a></li>
-        <li><a href="sustainability.html">Sustainability</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="newsroom.html">Newsroom</a></li>
-        <li><a href="investor.html">Investors</a></li>
-        <li><a href="careers.html">Careers</a></li>
-      </ul>
-    </nav>
+     <div class="menu-toggle" id="menu-toggle">☰</div>
+  <nav class="nav-menu" id="nav-menu">
+    <ul>
+      <li><a href="who-we-are.html">Who We Are</a></li>
+      <li><a href="what-we-do.html">What We Do</a></li>
+      <li><a href="sustainability.html">Sustainability</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="newsroom.html">Newsroom</a></li>
+      <li><a href="investor.html">Investors</a></li>
+      <li><a href="careers.html">Careers</a></li>
+    </ul>
+    <span class="close-menu" id="close-menu">✕</span>
+  </nav>
   </header>
 
    <section class="hero">
@@ -206,5 +207,18 @@
   setInterval(updateHero, 5000);
   updateHero();
 </script>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+const closeMenu = document.getElementById('close-menu');
 
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.add('show');
+});
+
+closeMenu.addEventListener('click', () => {
+  navMenu.classList.remove('show');
+});
+
+</script>
 
