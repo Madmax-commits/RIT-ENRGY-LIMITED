@@ -627,4 +627,23 @@ footer {
   background-color:#c7d7f0 ;
 }
 }
+#last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: navy;
+    box-sizing: border-box;
+    background-color: #f9f9f900; /* optional for contrast */
+  }
 
+  @media (max-width: 600px) {
+    #last {
+      padding: 15px;
+      font-size: 0.85em;
+    }
+  }
