@@ -352,7 +352,7 @@ footer p {
     display: block;
     position: absolute;
     top: 10px;
-    right: -10px;
+    right: 10px;
     font-size: 1.5rem;
     color: navy;
     cursor: pointer;
@@ -364,9 +364,9 @@ footer p {
   color: navy;
   cursor: pointer;
   padding: 1rem;
-  position: sticky;
+  position: fixed;
   top: 50px;
-  left: 380px;
+  left: 400px;
   z-index: 1001;
   background-color: white;
 }
